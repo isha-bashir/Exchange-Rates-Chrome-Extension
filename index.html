@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+   <title>Currency Exchange!</title>
+   <style>
+        body {
+            background: url("https://monexusa.com/wp-content/uploads/2021/05/AdobeStock_130545332-scaled-1.jpeg") no-repeat;
+        }
+        h2 {
+            color: rgb(231, 223, 223);
+            font-size: 28px;
+            font-family:Cambria;
+            margin-left: 28px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            width: 350px;
+        }
+        #amount {
+            margin-left: 80px;
+            padding: 7px;
+            width: 192px;
+            height: 15px;
+            border-radius: 7px;
+            text-align: center;
+            font-size: 13px;
+        }
+        #amount:hover {
+            background-color: rgb(214, 204, 204);
+        }
+        #currency {
+            padding: 7px;
+            /* margin: 10px; */
+            margin-top: 10px;
+            margin-left: 80px;
+            width: 207px;
+            height: 30px;
+            border-radius: 7px;
+            text-align: center;
+            font-size: 13px;
+        }
+        #currency:hover {
+            background-color: rgb(214, 205, 205);
+        }
+        button {
+            margin-left: 80px;
+            padding: 7px;
+            border-radius: 15px;
+            margin-top: 10px;
+            height: 30px;
+            text-align: center;
+            width: 210px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+        #convert:hover {
+            background-color: black;
+            color: white;
+        }
+        #result {
+            color: white;
+            font-size: 20px;
+            margin-left: 100px;
+            margin-top: 35px;
+            margin-bottom: 30px;
+        }
+   </style>
+</head>
+<body>
+    <h2>Exchange Rate Converter</h2>
+    <input type="number" id="amount" placeholder="Enter the amount" />
+    <select name="" id="currency">
+        <option value="INR">INR</option>
+        <option value="EUR">EUR</option>
+        <option value="CAD">CAD</option>
+        <option value="GBP">GBP</option>
+        <option value="USD">USD</option>
+        <option value="JPY">JPY</option>
+        <option value="AUD">AUD</option>
+        <option value="CHF">CHF</option>
+        <option value="CNY">CNY</option>
+        <option value="ZAR">ZAR</option>
+        <option value="HKD">HKD</option>
+        <option value="BRL">BRL</option>
+        <option value="COP">COP</option>
+        <option value="SGD">SGD</option>
+        <option value="RUB">RUB</option>
+    </select>
+    <br>
+    <button id="convert">Convert Currency</button>
+    <div id="result">Converted Rate: </div>
+</body>
+<script src="exchange.js">  </script>
+</html>

@@ -1,0 +1,13 @@
+{
+    "name": "Exchange Rates",
+    "version": "1.0",
+    "description": "Convert yoyr currencies quickly here!",
+    "manifest_version": 3,
+    "author": "Isha Bashir",
+    "action": {
+        "default_icon": "icon.png", 
+        "default_popup": "index.html",
+        "default_title": "Currency Converter" 
+    }
+
+}
